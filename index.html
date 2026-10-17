@@ -14,6 +14,7 @@
             --cloud-teal: #009688;
             --edit-pink: #c2185b;
             --chem-yellow: #fbc02d; /* 化學雲：警告黃 */
+            --report-green: #388e3c; /* 回報：警示綠/完成綠 */
             --key-black: #212121;  /* 帳密：隱密黑 */
         }
         body {
@@ -69,15 +70,16 @@
         .nav-button span { margin-top: 5px; }
 
         /* 顏色分配 */
-        .btn-fire  { background: var(--fire-red); }
-        .btn-water { background: var(--water-blue); }
-        .btn-ox    { background: var(--oxygen-gray); }
-        .btn-list  { background: var(--alarm-orange); }
-        .btn-video { background: var(--video-purple); }
-        .btn-cloud { background: var(--cloud-teal); }
-        .btn-edit  { background: var(--edit-pink); }
-        .btn-chem  { background: var(--chem-yellow); color: #000; } 
-        .btn-key   { background: var(--key-black); grid-column: span 2; border: 2px solid #555; }
+        .btn-fire   { background: var(--fire-red); }
+        .btn-water  { background: var(--water-blue); }
+        .btn-ox     { background: var(--oxygen-gray); }
+        .btn-list   { background: var(--alarm-orange); }
+        .btn-report { background: var(--report-green); }
+        .btn-video  { background: var(--video-purple); }
+        .btn-cloud  { background: var(--cloud-teal); }
+        .btn-edit   { background: var(--edit-pink); }
+        .btn-chem   { background: var(--chem-yellow); color: #000; } 
+        .btn-key    { background: var(--key-black); grid-column: span 2; border: 2px solid #555; }
 
         @media (max-width: 400px) {
             .dashboard { grid-template-columns: 1fr; }
@@ -104,6 +106,10 @@
 
         <a href="https://docs.google.com/spreadsheets/d/1kCAaGRusMmRJqsVhzDDvUd_ze3ZQLocN/edit" class="nav-button btn-list" target="_blank">
             <span>📋 住警器清冊</span>
+        </a>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScygm2kEI7JaOvLoMqSjzZESo1ud2wYJyPrMtSueQbiQdslhQ/viewform" class="nav-button btn-report" target="_blank">
+            <span>🏠 住警器設置回報</span>
         </a>
 
         <a href="https://drive.google.com/drive/u/0/folders/1DRjaIW3rO4T4EP6HzvJu2ruVNFuVvuCp" class="nav-button btn-video" target="_blank">
